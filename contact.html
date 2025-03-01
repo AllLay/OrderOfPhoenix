@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/Order_Of_Phoenix.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact Us</title>
+    <style>
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        section .contact-us, section .contact-form {
+            width: 48%;
+            color: white;
+            padding: 20px;
+        }
+
+        section .contact-us ul li {
+            list-style-type: none;
+        }
+
+        section .contact-us ul li a {
+            text-decoration: none;
+            color: yellow;
+        }
+
+        section .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        section .contact-form form label {
+            margin-bottom: 10px;
+        }
+
+        section .contact-form form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 1px solid #fff;
+            color: white;
+            border-radius: 25px;
+        }
+
+        section .contact-form form input[type="submit"] {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 8px 15px;
+            font-size: 14px;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            width: 120px;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <main class="contact-us">
+            <h1>Contact Us</h1>
+            <ul>
+                <li><strong>Founder:</strong> <a href="tel:+919787344314">09-787344314</a></li>
+                <li><strong>Co-founder:</strong> <a href="tel:+919443223447">09-443223447</a></li>
+                <li><strong>General Secretary:</strong> <a href="tel:+919989566706">09-989566706</a></li>
+            </ul>
+        </main>
+
+        <main class="contact-form">
+            <h1>Contact Form</h1>
+            <p>Send us a message and we'll get back to you as soon as we can!</p>
+            <form>
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name" required>
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email address" required>
+
+                <label>Message</label>
+                <input type="text" placeholder="Enter your message" required>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </main>
+    </section>
+
+    <footer>
+        <p>
+            Made by <a href="https://t.me/AllLay1" target="_blank">AllLay</a>
+        </p>
+    </footer>
+</body>
+</html>
