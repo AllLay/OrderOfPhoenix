@@ -12,31 +12,31 @@
             justify-content: space-between;
             padding: 50px;
         }
-
+        
         section .contact-us, section .contact-form {
             width: 48%;
             color: white;
             padding: 20px;
         }
-
+        
         section .contact-us ul li {
             list-style-type: none;
         }
-
+        
         section .contact-us ul li a {
             text-decoration: none;
             color: yellow;
         }
-
+        
         section .contact-form form {
             display: flex;
             flex-direction: column;
         }
-
+        
         section .contact-form form label {
             margin-bottom: 10px;
         }
-
+        
         section .contact-form form input {
             margin-bottom: 15px;
             padding: 10px;
@@ -45,7 +45,7 @@
             color: white;
             border-radius: 25px;
         }
-
+        
         section .contact-form form input[type="submit"] {
             cursor: pointer;
             background-color: rgba(0, 0, 0, 0.5);
@@ -56,6 +56,58 @@
             color: white;
             width: 120px;
             align-self: center;
+        }
+        
+        @media (max-width: 767px) {
+            section {
+                flex-direction: column;
+                padding: 20px;
+            }
+        
+            section .contact-us, section .contact-form {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        
+            section .contact-form form input[type="submit"] {
+                width: 100%;
+                padding: 12px;
+            }
+        
+            section .contact-form form input {
+                padding: 12px;
+            }
+        
+            section .contact-form form label {
+                font-size: 16px;
+            }
+        
+            section .contact-us ul li a {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            section .contact-us, section .contact-form {
+                padding: 10px;
+            }
+        
+            section .contact-form form input[type="submit"] {
+                font-size: 12px;
+                padding: 10px 15px;
+            }
+        
+            section .contact-us ul li a {
+                font-size: 14px;
+            }
+        
+            section .contact-form form input {
+                padding: 12px;
+            }
+        
+            section .contact-form form label {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
