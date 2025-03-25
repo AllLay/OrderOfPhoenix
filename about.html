@@ -7,18 +7,16 @@
     <link rel="stylesheet" href="./style.css">
     <title>About Us</title>
     <style>
-        body {
+                body {
             color: white;
         }
         
-        /* Slider */
-
         .slide-in {
             opacity: 0;
             transform: translateX(-100px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
-
+        
         .slide-in.active {
             opacity: 1;
             transform: translateX(0);
@@ -33,21 +31,19 @@
         .slide-in-bottom.active {
             opacity: 1;
             transform: translateY(0);
-        }        
-
-        /* Contents */
-
+        }
+        
         .content-1 {
             opacity: 0;
             transform: translateX(-2000px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
-
+        
         .content-1.active {
             opacity: 1;
             transform: translateX(0);
         }
-
+        
         section .content-1 {
             text-align: center;
             padding-right: 100px;
@@ -55,62 +51,62 @@
             margin: 300px;
             margin-top: 985px;
         }
-
+        
         section .content-1 h1 {
             font-size: 50px;
         }
-
+        
         section .content-1 p {
             font-size: 20px;
         }
-
+        
         section .content-2 {
             margin-bottom: 100px;
         }
-
+        
         section .content-2 .div-1 {
             margin-top: 800px;
             margin-bottom: 500px;
         }
-
+        
         section .content-2 .div-1 h2 {
             font-size: 40px;
             text-align: center;
         }
-
+        
         section .content-2 .div-1 p {
             text-align: center;
         }
-
+        
         section .content-2 .div-2 {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             gap: 20px;
         }
-
+        
         section .content-2 .div-2 div {
             display: flex;
             flex-direction: column;
             align-items: center;
             flex: 1;
         }
-
+        
         section .content-2 .div-2 h3, 
         section .content-2 .div-2 p {
             margin: 20px;
         }
-
+        
         section .content-2 .div-2 h3 {
             flex: 1;
             text-align: center;
         }
-
+        
         section .content-2 .div-2 p {
             flex: 1;
             text-align: center;
         }
-
+        
         .people {
             display: flex;
             justify-content: center;
@@ -122,24 +118,24 @@
             transform: translateY(100px);
             transition: opacity 1s ease-out, transform 1s ease-out;
         }
-
+        
         .people.active {
             opacity: 1;
             transform: translateY(0);
         }
-
+        
         .people div {
             flex: 1;
             max-width: 300px;
             text-align: center;
         }
-
+        
         .people img {
             width: 100%;
             height: auto;
             border-radius: 10px;
         }
-
+        
         section .Andrew {
             border: 5px black solid;
         }
@@ -150,6 +146,109 @@
         
         section .person {
             border: 5px black solid;
+        }
+        
+        @media (max-width: 767px) {
+            body {
+                font-size: 14px;
+            }
+            
+            section .content-1 {
+                margin: 50px;
+                margin-top: 150px;
+                padding: 20px;
+            }
+        
+            section .content-1 h1 {
+                font-size: 30px;
+            }
+        
+            section .content-1 p {
+                font-size: 16px;
+            }
+        
+            section .content-2 .div-1 {
+                margin-top: 100px;
+                margin-bottom: 200px;
+            }
+        
+            section .content-2 .div-1 h2 {
+                font-size: 30px;
+            }
+        
+            section .content-2 .div-1 p {
+                font-size: 14px;
+            }
+        
+            section .content-2 .div-2 {
+                flex-direction: column;
+                gap: 10px;
+            }
+        
+            section .content-2 .div-2 div {
+                flex: 1;
+                align-items: center;
+                text-align: center;
+            }
+        
+            section .content-2 .div-2 h3,
+            section .content-2 .div-2 p {
+                margin: 10px;
+            }
+        
+            section .content-2 .div-2 h3 {
+                font-size: 20px;
+            }
+        
+            section .content-2 .div-2 p {
+                font-size: 14px;
+            }
+            
+            .people {
+                flex-direction: column;
+                gap: 15px;
+            }
+        
+            .people div {
+                flex: 1;
+                max-width: 100%;
+            }
+        
+            .people img {
+                width: 90%;
+            }
+        
+            section .Andrew, 
+            section .Min_Zayar, 
+            section .person {
+                border-width: 3px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            section .content-1 {
+                margin-top: 100px;
+            }
+        
+            section .content-1 h1 {
+                font-size: 24px;
+            }
+        
+            section .content-1 p {
+                font-size: 14px;
+            }
+        
+            section .content-2 .div-1 h2 {
+                font-size: 25px;
+            }
+        
+            section .content-2 .div-2 h3 {
+                font-size: 18px;
+            }
+        
+            section .content-2 .div-2 p {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
